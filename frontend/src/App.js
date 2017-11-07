@@ -1,13 +1,13 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 
 import "./App.css";
 
 const Links = () => (
   <nav>
-    <Link to="/">Home</Link>
-    <Link to={{ pathname: "/about" }}> About</Link>
-    <Link to="/contact">Contact</Link>
+    <NavLink to="/">Home</NavLink>
+    <NavLink to="/about"> About</NavLink>
+    <NavLink to="/contact">Contact</NavLink>
   </nav>
 );
 const App = () => (
